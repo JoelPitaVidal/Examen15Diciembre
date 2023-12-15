@@ -2,7 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //imaginemos que aqui hay codigo
 
         Datos dato1 = Datos.getInstance();
         Datos dato2 = Datos.getInstance();
