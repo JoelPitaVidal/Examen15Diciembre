@@ -1,5 +1,21 @@
 public class Datos {
     /**
+     * puntuacion record
+     */
+    private int puntuacionRecord;
+    /**
+     *  nombre del que consiguio el record
+     */
+    private String aliasRecord;
+    /**
+     * rondas jugadas en la partida
+     */
+    private int rondasPartida;
+    /**
+     * ronda actual
+     */
+    private int rondaActual;
+    /**
      * numero generado para adivinar
      */
     private int numero;
@@ -27,11 +43,6 @@ public class Datos {
      * numero de fallos
      */
     private int fallos;
-
-    private static Record record;
-
-    private static Partida ronda;
-
     private Datos() {
 
     }
