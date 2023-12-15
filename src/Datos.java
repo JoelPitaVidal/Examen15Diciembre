@@ -47,6 +47,24 @@ public class Datos {
 
     }
 
+    public Datos(int puntuacionRecord, String aliasRecord, int rondasPartida, int rondaActual, int numero, int numeroAdivinado, int intentosMax, int contadorIntentos, int aciertos, String alias, int fallos) {
+        this.puntuacionRecord = puntuacionRecord;
+        this.aliasRecord = aliasRecord;
+        this.rondasPartida = rondasPartida;
+        this.rondaActual = rondaActual;
+        this.numero = numero;
+        this.numeroAdivinado = numeroAdivinado;
+        this.intentosMax = intentosMax;
+        this.contadorIntentos = contadorIntentos;
+        this.aciertos = aciertos;
+        this.alias = alias;
+        this.fallos = fallos;
+    }
+
+    public int getPuntuacionRecord() { return puntuacionRecord;}
+    public String getAliasRecord() { return aliasRecord;}
+    public int getRondasPartida() {return rondasPartida;}
+    public int getRondaActual() {return rondaActual;}
     static Datos dato = new Datos();
     public static Datos getInstance(){
         return dato;
@@ -72,7 +90,6 @@ public class Datos {
     public void setFallos(int fallos) {
         this.fallos = fallos;
     }
-
     public int getNumero() {
         return numero;
     }
@@ -94,4 +111,9 @@ public class Datos {
     public int getFallos() {
         return fallos;
     }
+    public void setRondaActual(int rondaActual) { this.rondaActual = rondaActual;}
+    public void setPuntuacionRecord(int puntuacionRecord) {this.puntuacionRecord = puntuacionRecord;}
+    public void setAliasRecord(String aliasRecord) { this.aliasRecord = aliasRecord;}
+    public void setRondasPartida(int rondasPartida) {this.rondasPartida = rondasPartida;}
+
 }

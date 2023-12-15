@@ -2,7 +2,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Datos dato1 = Datos.getInstance();
         Datos dato2 = Datos.getInstance();
 
@@ -10,5 +9,8 @@ public class Main {
 
         System.out.println(dato1.getNumero());
         System.out.println(dato2.getNumero());
+
+
+
     }
 }
